@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALAIVANI P - IT Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>KALAIVANI P</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="hero-image" style="background: url('bg.png') no-repeat center center/cover; height: 400px;">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Kalaivani P, a third-year IT student with a passion for technology and problem-solving. Explore my work and skills below!</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am currently pursuing a degree in Information Technology. My journey has been marked by a deep interest in software development, data analysis, and web design. I am dedicated to learning new technologies and applying them to solve real-world problems.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML/CSS: Intermediate</li>
+                <li>JavaScript: Intermediate</li>
+                <li>Python: Intermediate</li>
+                <li>SQL: Intermediate</li>
+                <li>Java : Basic</li>
+                <li>C/C++ : Basic</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Clinic Management</h3>
+                <p>A clinic management built using HTML, CSS, JavaScript and python that are used to manage the patient records and has staff individual authentication</p>
+                <a href="[Project Link]">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Parcel delivery system</h3>
+                <p>A parcel delivery system built using HTML,CSS and python that are used to order and track the parcel and also stores the history of the parcels </p>
+                <a href="[Project Link]">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Internal Funded Project Management</h3>
+                <p>A IFP Management bulit using HTML,CSS,JavaScript and Python that are used to add the project details in the database and also has different users (admin,faculty),it downloads the sanction copy and it tracks the progress of each project  </p>
+                <a href="[Project Link]">View Project</a>
+            </div>
+           
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Email: <a href="mailto:contact@yourdomain.com">kalaivani@outlook.com</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kalaivani P. All rights reserved.</p>
+    </footer>
+</body>
+</html>
