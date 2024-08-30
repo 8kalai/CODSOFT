@@ -1,0 +1,298 @@
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-size: contain; /* Adjust size of the logo */
+    background-repeat: no-repeat; /* Prevent the logo from repeating */
+    background-position: center center; /* Center the logo */
+    background-color: #f0f0f0; /* Optional: add a background color */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: #ece6e6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Paragraphs */
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+    color: #fff;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #072736, #23597b, #4b84a8); /* Space-inspired header */
+    padding: 10px; /* Increased padding for better spacing */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+.logo-text {
+    margin-left: 15px; /* Space between logo and text */
+    display: flex;
+    flex-direction: column;
+}
+
+.top-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1;
+}
+
+.top-navigation a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    flex: 20px;
+}
+
+.profile {
+    display: flex;
+    color: #4b84a8;
+   
+}
+
+.profile a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    background-color: #011721; /* Background color for sidebar */
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    gap: 30px;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 70px;
+}
+
+.sidebar-nav li {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav a {
+    color: #4b84a8; /* Accent color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    text-align: end;
+}
+
+.sidebar-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Album Styles */
+.sidebar .album img {
+    width: 80px; /* Adjust width for sidebar images */
+    height: 80px; /* Adjust height for sidebar images */
+    object-fit: cover; /* Ensure image covers the box */
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.sidebar .album h3 {
+    font-size: 14px; /* Adjust text size for sidebar */
+    margin-top: 5px; /* Space between image and text in sidebar */
+}
+
+.sidebar .music-section {
+    display: flex;
+    flex-direction: column; /* Arrange album items vertically */
+    gap: 15px; /* Space between items */
+}
+
+.sidebar .album {
+    display: flex;
+    align-items: center; /* Vertically center content within the container */
+    gap: 10px; /* Space between text and image */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sidebar .album-info {
+    display: flex;
+    flex-direction: column; /* Stack text elements vertically */
+}
+
+.sidebar .album-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebar .album-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sidebar .album-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+.sidebar .icons-container {
+    display: flex;
+    flex-direction: column; /* Stack icons and text vertically */
+    gap: 20px; /* Space between each icon-text pair */
+}
+
+.home-icon, .search-icon {
+    display: flex;
+    align-items: center; /* Align text vertically with the icon */
+    gap: 20px; /* Space between icon and text */
+}
+
+.home-icon img, .search-icon img {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+}
+
+.home-icon {
+    margin-bottom: 15px; /* Space below the Home icon */
+}
+
+.search-icon {
+    margin-bottom: 20px; /* Space below the Search icon */
+}
+
+.home-icon span, .search-icon span {
+    font-size: 20px; /* Adjust this value to resize the text */
+}
+
+/* Main Content Styles */
+.main-content {
+    background-color: #072736;
+    text-align: 40px;
+}
+
+.main-content img {
+    width: 100%;
+    height: 40%;
+}
+
+.main-content .album {
+    flex: 0 0 auto;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.main-content .album img {
+    width: 160px; /* Adjust width for main content images */
+    height: 160px; /* Adjust height for main content images */
+    object-fit: cover; /* Ensure image covers the box */
+    margin-left: 60%;
+    border-radius: 8px; /* Optional: rounded corners for images */
+}
+
+.main-content .album h3 {
+    font-size: 16px; /* Adjust text size for main content */
+    margin-top: 20px; /* Space between image and text in main content */
+}
+
+.main-content .music-section-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.main-content .music-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px; /* Adjust this value to increase or decrease the gap between images */
+}
+
+/* Player Controls */
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #072736, #23597b, #4b84a8);
+    color: white;
+    padding: 10px;
+}
+
+.current-song {
+    display: flex;
+    align-items: center;
+}
+
+.current-song img {
+    height: 50px;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 5px; /* Space between control buttons */
+}
+
+.volume-control input[type="range"] {
+    width: 100px;
+}
